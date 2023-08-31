@@ -70,6 +70,17 @@ header {
 .badge-cc{
   background-color: #051e345d;
 }
+.main-container-mid{
+  background-color: red;
+  height: 100%;
+  width:calc((100% /3)*2)
+}
+.main-container-bot{
+  background-color: aquamarine;
+  height: 100%;
+  width: calc(100% / 3)
+
+}
 @media screen and (max-width:992px){
   .side-bar{
     width: 80px;
@@ -77,5 +88,11 @@ header {
   }
   .main-container{
     width: calc(100vw - 80px);
+  }
+  .main-container-mid{
+    width:100%
+  }
+  .main-container-bot{
+    width: 100%
   }
 }
