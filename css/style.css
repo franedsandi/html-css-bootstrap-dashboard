@@ -49,6 +49,20 @@ header {
 .text-orange{
   color: #FF8F00;
 }
+.side-bar li {
+  border-radius: 10px;
+  padding: 5px;
+  overflow: hidden;
+}
+.side-bar li a{
+  color: white;
+}
+.side-bar li:hover {
+  background-color: white;
+}
+.side-bar li:hover a{
+  color: black;
+}
 .side-bar .icon{
   width: 40px ;
   height: 40px;
