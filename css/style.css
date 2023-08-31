@@ -25,7 +25,6 @@ header {
   background-color:#F8F9FA ;
 }
 .big-container{
-  background-color: green;
   height: 100vh;
   padding-top: 80px;
 }
@@ -37,14 +36,15 @@ header {
 }
 .main-container{
   height: 100%;
-  width:100%;
+  width:calc(100vw - 170px);
   background-color: #F8F9FA;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .main-container-top{
   background-color:#1B72E8 ;
-  width: 100%;
-  height: 100px;;
+  width: 100%
+
 }
 .text-orange{
   color: #FF8F00;
@@ -70,7 +70,10 @@ header {
 }
 @media screen and (max-width:992px){
   .side-bar{
-    width: 100px;
+    width: 80px;
     background-image: none;
+  }
+  .main-container{
+    width: calc(100vw - 80px);
   }
 }
