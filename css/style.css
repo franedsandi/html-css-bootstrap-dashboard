@@ -78,7 +78,7 @@ header {
   width: calc(100% / 3)
 }
 .card-cc{
-  border: 1px solid #CCE4F7;
+  border: 1px solid #D2D2D2;
   background-color: white;
 }
 .card-cc .text{
