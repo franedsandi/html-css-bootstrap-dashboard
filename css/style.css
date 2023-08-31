@@ -79,12 +79,10 @@ header {
 }
 .card-cc{
   border: 1px solid #CCE4F7;
+  background-color: white;
 }
 .card-cc .text{
   background-color: #F7F7F7;
-}
-.content{
-  background-color: white ;
 }
 .table th{
   height: 50px;
@@ -95,6 +93,9 @@ header {
   margin-right: 10px;
 }.main-container-top .text{
   font-size: 40px;
+}
+.card-cc .image img {
+  width: 100%;
 }
 
 @media screen and (max-width:576px){
