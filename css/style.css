@@ -62,7 +62,7 @@ header {
   background-image: url(../img/sidebar-bg.png);
 }
 .side-bar li {
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 5px;
   overflow: hidden;
 }
@@ -70,10 +70,7 @@ header {
   color: white;
 }
 .side-bar li:hover {
-  background-color: white;
-}
-.side-bar li:hover a{
-  color: black;
+  background-color: rgba(255, 255, 255, 0.267);
 }
 .side-bar .icon{
   width: 40px ;
