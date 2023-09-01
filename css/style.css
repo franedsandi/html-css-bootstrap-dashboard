@@ -12,27 +12,16 @@ header {
   align-items: center;
 }
 
+/* containers */
 .container-top{
   height: 60px;
   width: 100%;
   background-color: white;
   display: flex;
 }
-.bg-grey{
-  background-color: #E5E5E5;
-}
-.bg-lightgrey{
-  background-color:#F8F9FA ;
-}
 .big-container{
   height: 100vh;
   padding-top: 80px;
-}
-.side-bar{
-  height: calc(100%);
-  width: 170px;
-  background-color: #051E34;
-  background-image: url(../img/sidebar-bg.png);
 }
 .main-container{
   height: calc(100% - 80px);
@@ -41,13 +30,36 @@ header {
   overflow-y: auto;
   overflow-x: hidden;
 }
+.main-container-top .text{
+  font-size: 40px;
+}
+.main-container-mid{
+  width:calc((100% /3)*2)
+}
+.main-container-bot{
+  width: calc(100% / 3)
+}
 .main-container-top{
   background-color:#1B72E8 ;
   width: 100%
-
 }
+/* background colors */
+.bg-grey{
+  background-color: #E5E5E5;
+}
+.bg-lightgrey{
+  background-color:#F8F9FA ;
+}
+/* text color */
 .text-orange{
   color: #FF8F00;
+}
+/* sidebar */
+.side-bar{
+  height: calc(100%);
+  width: 170px;
+  background-color: #051E34;
+  background-image: url(../img/sidebar-bg.png);
 }
 .side-bar li {
   border-radius: 10px;
@@ -67,16 +79,7 @@ header {
   width: 40px ;
   height: 40px;
 }
-.badge-cc{
-  background-color: #051e345d;
-  font-size: 12px;
-}
-.main-container-mid{
-  width:calc((100% /3)*2)
-}
-.main-container-bot{
-  width: calc(100% / 3)
-}
+/* card */
 .card-cc{
   border: 1px solid #D2D2D2;
   background-color: white;
@@ -84,6 +87,15 @@ header {
 .card-cc .text{
   background-color: #F7F7F7;
 }
+.card-cc .image img {
+  width: 100%;
+}
+/* badge */
+.badge-cc{
+  background-color: #051e345d;
+  font-size: 12px;
+}
+/* table */
 .table th{
   height: 50px;
 }
@@ -92,11 +104,6 @@ header {
   width: 35px;
   border-radius: 50%;
   margin-right: 10px;
-}.main-container-top .text{
-  font-size: 40px;
-}
-.card-cc .image img {
-  width: 100%;
 }
 .table tr th:first-child{
   min-width: 150px ;
@@ -104,10 +111,12 @@ header {
 .table tr th:nth-child(2){
   min-width: 120px ;
 }
+/* offcanvas */
 .sizer{
   width: 50vw;
   min-width: 400px;
 }
+/* mobile */
 @media screen and (max-width:576px){
   .table tr th:nth-of-type(2),
   .table tr th:nth-of-type(3),
@@ -119,6 +128,7 @@ header {
     width: 100vw;
   }
 }
+/* tablet */
 @media screen and (max-width:992px){
   .side-bar{
     width: 80px;
@@ -133,5 +143,4 @@ header {
   .main-container-bot{
     width: 100%
   }
-
 }
