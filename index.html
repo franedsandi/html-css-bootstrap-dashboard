@@ -133,18 +133,211 @@
               <div class="text text-white fs-3 ">
                 <span>Nuovo Studente</span>
                 <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
-                <div class="offcanvas offcanvas-end .offcanvas-xxl" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    HOLIS
+                <div class="offcanvas offcanvas-end w-auto" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="sizer fs-6">
+                    <div class="offcanvas-header ">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputname4" class="form-label">Nome</label>
+                          <input type="text" class="form-control" id="inputname4" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputlastname4" class="form-label">Cognome</label>
+                          <input type="text" class="form-control" id="inputlastname4" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="inputEmail4" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Indirizo Email</label>
+                          <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="inputEmail5" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword5" required>
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Indirizzo</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">Citta</label>
+                          <input type="text" class="form-control" id="inputCity" required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">Stato</label>
+                          <select id="inputState" class="form-select" required>
+                            <option selected disabled>Scegli...</option>
+                            <option disabled>Valle d'Aosta</option>
+                            <option>Aosta</option>
+                            <option disabled>Piemonte</option>
+                            <option>Torino</option>
+                            <option>Alessandria</option>
+                            <option>Asti</option>
+                            <option>Biella</option>
+                            <option>Cuneo</option>
+                            <option>Novara</option>
+                            <option>Verbano-Cusio-Ossola</option>
+                            <option>Vercelli</option>
+                            <option disabled>Liguria</option>
+                            <option>Genova</option>
+                            <option>Imperia</option>
+                            <option>La Spezia</option>
+                            <option>Savona</option>
+                            <option disabled>Lombardia</option>
+                            <option>Milano</option>
+                            <option>Bergamo</option>
+                            <option>Brescia</option>
+                            <option>Como</option>
+                            <option>Cremona</option>
+                            <option>Lecco</option>
+                            <option>Lodi</option>
+                            <option>Mantova</option>
+                            <option>Monza</option>
+                            <option>Brianza</option>
+                            <option>Pavia</option>
+                            <option>Sondrio</option>
+                            <option>Varese</option>
+                            <option disabled>Trentino-Alto Adige</option>
+                            <option>Trento</option>
+                            <option>Bolzano</option>
+                            <option disabled>Veneto</option>
+                            <option>Venezia</option>
+                            <option>Belluno</option>
+                            <option>Padova</option>
+                            <option>Rovigo</option>
+                            <option>Treviso</option>
+                            <option>Verona</option>
+                            <option>Vicenza</option>
+                            <option disabled>Friuli-Venezia Giulia</option>
+                            <option>Trieste</option>
+                            <option>Gorizia</option>
+                            <option>Pordenone</option>
+                            <option>Udine</option>
+                            <option disabled>Emilia-Romagna</option>
+                            <option>Bologna</option>
+                            <option>Ferrara</option>
+                            <option>Forlì-Cesena</option>
+                            <option>Modena</option>
+                            <option>Parma</option>
+                            <option>Piacenza</option>
+                            <option>Ravenna</option>
+                            <option>Reggio Emilia</option>
+                            <option>Rimini</option>
+                            <option disabled>Toscana</option>
+                            <option>Firenze</option>
+                            <option>Arezzo</option>
+                            <option>Grosseto</option>
+                            <option>Livorno</option>
+                            <option>Lucca</option>
+                            <option>Mass Carrara</option>
+                            <option>Pisa</option>
+                            <option>Pistoia</option>
+                            <option>Prato</option>
+                            <option>Siena</option>
+                            <option disabled>Umbria</option>
+                            <option>Perugia</option>
+                            <option>Terni</option>
+                            <option disabled>Marche</option>
+                            <option>Ancona</option>
+                            <option>Ascoli Piceno</option>
+                            <option>Fermo</option>
+                            <option>Macerata</option>
+                            <option>Pesaro-Urbino</option>
+                            <option disabled>Lazio</option>
+                            <option>Roma</option>
+                            <option>Frosinone</option>
+                            <option>Latina</option>
+                            <option>Rieti</option>
+                            <option>Viterbo</option>
+                            <option disabled>Abruzzo</option>
+                            <option>L'Aquila</option>
+                            <option>Chieti</option>
+                            <option>Pescara</option>
+                            <option>Teramo</option>
+                            <option disabled>Molise</option>
+                            <option>Campobasso</option>
+                            <option>Isernia</option>
+                            <option disabled>Campania</option>
+                            <option>Napoli</option>
+                            <option>Avellino</option>
+                            <option>Benevento</option>
+                            <option>Caserta</option>
+                            <option>Salerno</option>
+                            <option disabled>Puglia</option>
+                            <option>Bari</option>
+                            <option>Andria</option>
+                            <option>Barletta</option>
+                            <option>Brindisi</option>
+                            <option>Foggia</option>
+                            <option>Lecce</option>
+                            <option>Taranto</option>
+                            <option>Trani</option>
+                            <option disabled>Basilicata</option>
+                            <option>Potenza</option>
+                            <option>Matera</option>
+                            <option disabled>Calabria</option>
+                            <option>Catanzaro</option>
+                            <option>Cosenza</option>
+                            <option>Crotone</option>
+                            <option>Reggio Calabria</option>
+                            <option>Vibo Valentia</option>
+                            <option disabled>Sicilia</option>
+                            <option>Palermo</option>
+                            <option>Agrigento</option>
+                            <option>Caltanissetta</option>
+                            <option>Catania</option>
+                            <option>Enna</option>
+                            <option>Messina</option>
+                            <option>Ragusa</option>
+                            <option>Siracusa</option>
+                            <option>Trapani</option>
+                            <option disabled>Sardegna</option>
+                            <option>Cagliari</option>
+                            <option>Nuoro</option>
+                            <option>Oristano</option>
+                            <option>Sassari</option>
+                            <option>Sud Sardegna</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">CAP</label>
+                          <input type="text" class="form-control" id="inputZip" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFileMultiple" class="form-label">Foto</label>
+                          <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck" required>
+                              seleziona per proseguire
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Salva</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
-                <!-- <button type="button" class="btn btn-outline-light ms-3">
-                  <i class="fa-solid fa-plus"></i>
-                </button> -->
               </div>
             </div>
             <div class="col-12 order-md-0 pt-3 pt-md-0">
