@@ -134,7 +134,7 @@
                 <span>Nuovo Studente</span>
                 <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
                 <div class="offcanvas offcanvas-end w-auto" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                  <div class="sizer fs-6">
+                  <div class="sizer fs-6 overflow-auto">
                     <div class="offcanvas-header ">
                       <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -143,7 +143,7 @@
                       <form class="row g-3">
                         <div class="col-md-6">
                           <label for="inputname4" class="form-label">Nome</label>
-                          <input type="text" class="form-control" id="inputname4" required>
+                          <input type="text" class="form-control" name="inputname4" id="inputname4" required>
                         </div>
                         <div class="col-md-6">
                           <label for="inputlastname4" class="form-label">Cognome</label>
@@ -173,7 +173,7 @@
                         </div>
                         <div class="col-12">
                           <label for="inputAddress" class="form-label">Indirizzo</label>
-                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                          <input type="text" class="form-control" id="inputAddress" required>
                         </div>
                         <div class="col-md-6">
                           <label for="inputCity" class="form-label">Citta</label>
@@ -327,12 +327,13 @@
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="gridCheck">
                             <label class="form-check-label" for="gridCheck" required>
-                              seleziona per proseguire
+                              Seleziona per proseguire
                             </label>
                           </div>
                         </div>
                         <div class="col-12">
                           <button type="submit" class="btn btn-primary">Salva</button>
+                          <button type="reset" class="btn btn-warning" >Svuota</button>
                         </div>
                       </form>
                     </div>
