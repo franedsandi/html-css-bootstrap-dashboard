@@ -132,9 +132,19 @@
             <div class="col-12 order-md-1 py-2 d-flex justify-content-md-end ">
               <div class="text text-white fs-3 ">
                 <span>Nuovo Studente</span>
-                <button type="button" class="btn btn-outline-light ms-3">
+                <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                <div class="offcanvas offcanvas-end .offcanvas-xxl" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    HOLIS
+                  </div>
+                </div>
+                <!-- <button type="button" class="btn btn-outline-light ms-3">
                   <i class="fa-solid fa-plus"></i>
-                </button>
+                </button> -->
               </div>
             </div>
             <div class="col-12 order-md-0 pt-3 pt-md-0">
@@ -415,9 +425,19 @@
             </div>
             <div class="card-cc rounded-2 overflow-hidden m-2">
               <div class="card-cc rounded-2 overflow-hidden m-2">
-                <div class="content p-2">
+                <div class="content">
                   <div class="image">
                     <img src="./img/stats.jpeg" alt="stats">
+                  </div>
+                  <div class=" info">
+                    <span class="fs-4 p-3">Utenti attivi</span>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Lista degli utenti attivi in piattaforma nel ultimo messe</li>
+                      <li class="list-group-item">Marzo: 1500</li>
+                      <li class="list-group-item">febbraio: 800</li>
+                      <li class="list-group-item">gennaio: 1200</li>
+                      <li class="list-group-item py-3"><a href="#">Visualizza report approfondito</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>

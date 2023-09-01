@@ -104,7 +104,6 @@ header {
 .table tr th:nth-child(2){
   min-width: 120px ;
 }
-
 @media screen and (max-width:576px){
   .table tr th:nth-of-type(2),
   .table tr th:nth-of-type(3),
@@ -127,4 +126,5 @@ header {
   .main-container-bot{
     width: 100%
   }
+
 }
